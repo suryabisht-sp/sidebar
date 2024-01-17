@@ -13,13 +13,13 @@ const Navbar = () => {
       </Flex> */}
       <Spacer />
       <HStack spacing="10px">
-        <Avatar name='Ryan Florence' src='https://bit.ly/ryan-florence'>
-          <AvatarBadge borderColor='white' bg='papayawhip' boxSize='1.25em'>
+        <Avatar name='Ryan Florence' src='https://bit.ly/ryan-florence' boxSize={{ base: '1em', md: '2em' }}>
+          <AvatarBadge borderColor='white' bg='papayawhip' boxSize={{ base: '10px', md: '1.25em' }}>
             <Text fontSize="8px">Hi</Text>
           </AvatarBadge>
         </Avatar>
-        <Text bg='gray.400' p="8px" borderRadius={10} color="#FFF">test@test.com</Text>
-        <Button colorScheme='orange'>Logout</Button>
+        <Text bg='gray.400' p="8px" borderRadius={10} fontSize={{base:"14px", md:"1em"}} color="#FFF">test@test.com</Text>
+        <Button colorScheme='orange' fontSize={{base:"14px", md:"1em"}} >Logout</Button>
       </HStack>
     </Flex>
   )
